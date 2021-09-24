@@ -1,8 +1,10 @@
 package com.unify.test;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.unify.mylibrary.LibClass;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +12,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        LibClass.libMethod();
     }
 }
